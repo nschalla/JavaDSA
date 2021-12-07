@@ -1,0 +1,50 @@
+package com.linkedlist;
+
+public class SinglyNode {
+ int data;
+ SinglyNode next;
+public SinglyNode(int data) {
+	super();
+	this.data = data;
+}
+void printSingleNode(SinglyNode head){
+	SinglyNode current = head;
+	 while(current != null) {
+		 System.out.print(current.data + "->");
+	     current = current.next;  
+	 }
+	
+}
+SinglyNode addatBegin(SinglyNode head,int data) {
+	SinglyNode newNode = new SinglyNode(data);
+	if(head == null) {
+		head = newNode;
+	}
+	newNode.next =head;
+	head=newNode;
+	return head;
+	//return new Head
+	
+}   
+SinglyNode addatEnd(SinglyNode head,int data) {  
+	SinglyNode temp = new SinglyNode(data);
+	SinglyNode current = head;
+	if(current == null) {
+		head= temp;
+	}
+	while(current!=null) {
+		current = current.next;
+	}
+	current.next = temp;
+	return null;
+}
+    
+
+SinglyNode deleteatBegin() {
+	return null;
+}   
+SinglyNode deleteatEnd() {
+	return null;
+}
+
+}

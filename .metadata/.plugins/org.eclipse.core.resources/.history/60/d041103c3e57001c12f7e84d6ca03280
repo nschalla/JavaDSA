@@ -1,0 +1,17 @@
+package com.linkedlist;
+
+public class Main {
+
+	public static void main(String[] args) {
+		SinglyNode head = new SinglyNode(1);
+		SinglyNode firstNode = new SinglyNode(2);
+		SinglyNode secondNode = new SinglyNode(3);
+		head.next = firstNode;
+		firstNode.next = secondNode;
+		//hhead.printSingleNode(head);  
+		head.addatEnd(head, 4);
+		head.printSingleNode(head);
+
+	}
+
+}
