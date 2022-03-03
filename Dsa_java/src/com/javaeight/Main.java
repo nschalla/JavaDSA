@@ -10,9 +10,10 @@ public class Main {
 Greeting helloName = () -> System.out.println("hello bro");
 Thread newthread = new Thread(()->System.out.println("heello"));
 newthread.run(); 
-helloName.Name();
-	}public Main() {
-		// TODO Auto-generated constructor stub
+Runnable run =()->System.out.println("Runnable");
+run.run();
+helloName.Name(); 
+
 	}
 }
  

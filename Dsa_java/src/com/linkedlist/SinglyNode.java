@@ -1,8 +1,5 @@
 package com.linkedlist;
-
-import java.net.SecureCacheResponse;
-
-public class SinglyNode {
+ class SinglyNode {
  int data;
  SinglyNode next;
 public SinglyNode(int data) {
