@@ -49,11 +49,6 @@ public class SLinkedList<T extends Comparable<T>> {
 		node.setNext(nextNode);
 		
 	}
-	
-	public void deleteNode(T data) {
-		//Need to work on that and implement that
-		
-	}
 
 	public int getCount() {
 		return count;

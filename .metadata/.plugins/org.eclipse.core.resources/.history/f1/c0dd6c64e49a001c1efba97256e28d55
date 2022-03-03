@@ -23,7 +23,6 @@ public class Main {
 	i.inserAtHead(1);
 	i.inserAtHead(2);
 	i.insertAtTail(3);
-	System.out.println(i);
 	i.inserAtPosition(4, 2);
 	System.out.println(i);
 	System.out.println(i.getCount());
