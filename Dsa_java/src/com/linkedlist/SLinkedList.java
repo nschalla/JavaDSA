@@ -29,6 +29,7 @@ public class SLinkedList<T extends Comparable<T>> {
 			
 		}
 		curr.setNext(node);
+		count++;
 		
 	}
 	public void inserAtPosition(T data,int postion) 
@@ -47,14 +48,47 @@ public class SLinkedList<T extends Comparable<T>> {
 		Node<T> node = new Node<T>(data);
 		currNode.setNext(node);
 		node.setNext(nextNode);
+		count++;
 		
 	}
 	
-	public void deleteNode(T data) {
-		//Need to work on that and implement that
+	public  void deleteNodeAtBegin() {
+		if(head == null ) {
+			return ;
+		}
+		if(head.getNext() == null) {
+			head = null;
+		}
+		Node<T> temp = head.getNext();
+		head = temp;
+		count--;
+		
+		
 		
 	}
-
+	public  void deleteNodeAtEnd() {
+		if(head == null ) {
+			return ;
+		}
+		if(head.getNext() == null) {
+			head = null;
+		}
+		Node<T> current = head;
+				
+		while(current.getNext().getNext()!= null) 
+		{
+			
+			current = current.getNext();
+		}
+		 current.setNext(null);
+		
+		
+		
+		count--;
+	}
+		
+		
+	
 	public int getCount() {
 		return count;
 	}

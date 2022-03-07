@@ -27,6 +27,13 @@ public class Main {
 	i.inserAtPosition(4, 2);
 	System.out.println(i);
 	System.out.println(i.getCount());
+	i.deleteNodeAtBegin();
+	System.out.println(i);
+	System.out.println(i.getCount());
+	System.out.println("-------------------");
+	i.deleteNodeAtEnd();
+	System.out.println(i);
+	
 	}
 
 }
